@@ -1,0 +1,25 @@
+language: node
+
+sudo: false
+
+cache:
+  apt: true
+  directories:
+    - node_modules
+
+node_js: stable
+
+install:
+  - yarn
+
+scripts:
+  - npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  on:
+    branch: main
+
+local_dir: ./docs/.vuepress/dist

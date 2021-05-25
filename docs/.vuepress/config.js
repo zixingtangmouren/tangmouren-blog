@@ -2,9 +2,11 @@
  * @Author: tangzhicheng
  * @Date: 2021-02-26 15:17:41
  * @LastEditors: tangzhicheng
- * @LastEditTime: 2021-05-11 10:00:35
+ * @LastEditTime: 2021-05-25 14:59:22
  * @Description: file content
  */
+
+const path = require('path')
 
 module.exports = {
   title: '唐某人的博客',
